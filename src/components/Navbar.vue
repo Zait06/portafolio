@@ -1,11 +1,11 @@
 <template>
-    <b-navbar class="is-dark is-bold">
+    <b-navbar class="navBar">
         <template slot="end">
-            <b-navbar-item tag="router-link" :to="'/'">
+            <b-navbar-item tag="router-link" :to="{ path: '/' }">
                 Home
             </b-navbar-item>
-            <b-navbar-item tag="router-link" :to="'/about'">
-                About Me
+            <b-navbar-item href="#aboutMe">
+                About
             </b-navbar-item>
             <b-navbar-item href="#contact">
                 Contact
@@ -13,6 +13,13 @@
         </template>
     </b-navbar>
 </template>
+
+<style>
+    .navBar{
+        background-color: black;
+        color: white;
+    }
+</style>
 
 <script>
 export default {

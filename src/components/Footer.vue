@@ -1,15 +1,22 @@
 <template>
-    <footer class="footer is-dark is-bold" id="contact">
-        <div class="level">
-            <div class="level-item has-text-centered">
-                <p class="title">Contact</p>
-            </div>
-            <div class="level-item">
-                <p class="heading"> Github: <a href="https://github.com/Zait06">Zait06</a></p>
-            </div>
-            <div class="level-item">
-                <p class="heading">e-mail: zait.com</p>
+    <footer class="footer is-mobile has-text-white" id="contact">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <p class="title has-text-white">Contact</p>
+                    <p>E-mail:</p>
+                </div>
+                <div class="column has-text-centered">
+                    <p> Github:&nbsp;<a href="https://github.com/Zait06">Zait06</a></p>
+                </div>
             </div>
         </div>
     </footer>
 </template>
+
+<style>
+    #contact{
+        background: linear-gradient(to bottom,rgb(72, 72, 72), black);
+        color: white;
+    }
+</style>
