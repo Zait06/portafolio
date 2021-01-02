@@ -9,7 +9,7 @@
 
 <style>
   .home{
-    background: linear-gradient(to bottom, black, rgb(72, 72, 72));
+    background: linear-gradient(to bottom, #0a0a0a, rgb(72, 72, 72));
   }
 </style>
 

@@ -16,7 +16,7 @@
 
 <style>
     #contact{
-        background: linear-gradient(to bottom,rgb(72, 72, 72), black);
+        background: linear-gradient(to bottom,rgb(70, 70, 70), #0a0a0a);
         color: white;
     }
 </style>

@@ -8,9 +8,14 @@ import 'buefy/dist/buefy.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
+import VueParticles from 'vue-particles'
+
+import 'animate.css/animate.css'
+
 Vue.config.productionTip = false
 
 Vue.use(Buefy)
+Vue.use(VueParticles)
 
 new Vue({
   created () {
