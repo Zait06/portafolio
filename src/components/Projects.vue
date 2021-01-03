@@ -2,11 +2,9 @@
     <div class="container is-mobile" id="aboutMe">
         <p class="title has-text-white has-text-centered" data-aos="fade-up">Projects</p>
         <div class="columns is-3 is-multiline">
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
+            <div class="column is-4" data-aos="fade-up" v-for="p in proj" :key="p.name">
+                <Card :project="p"/>
+            </div>
         </div>
     </div>
 </template>
@@ -30,19 +28,19 @@ export default {
             proj:[
                 {
                     'name': 'SARES',
-                    'img':'../assets/logo.png',
+                    'img':'logo.png',
                     'description': 'It\'s a project that it try to have a controler teacher register on a school.'
                 },
                 {
                     'name': 'PSO',
-                    'img':'../assets/logo.png',
+                    'img':'pso.png',
                     'description': 'It\'s a project that it try to have a controler teacher register on a school.'
                 },
                 {
-                    'name': 'MLP',
-                    'img':'../assets/logo.png',
+                    'name': 'Snake C',
+                    'img':'logo.png',
                     'description': 'It\'s a project that it try to have a controler teacher register on a school.'
-                }
+                },
             ]
         }
     },
