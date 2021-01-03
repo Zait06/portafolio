@@ -7,6 +7,7 @@
                     <p>E-mail:</p>
                 </div>
                 <div class="column has-text-centered">
+                    <i class="fab fa-github"></i>
                     <p> Github:&nbsp;<a href="https://github.com/Zait06">Zait06</a></p>
                 </div>
             </div>

@@ -1,19 +1,28 @@
 <template>
-    <div class="hero is-large is-mobile">
+    <div class="hero is-large">
         <div class="hero-body">
-            <div class="container is-mobile">
-                <h1 class="title has-text-white
-                    animate__animated 
-                    animate__fadeInDown 
-                    animate__delay-1s">
-                    Hi, I am Zait
-                </h1>
-                <h2 class="subtitle has-text-white
-                    animate__animated 
-                    animate__fadeInDown 
-                    animate__delay-2s">
-                    Computer systems engineer
-                </h2>
+            <div class="container">
+                <div class="columns is-mobile">
+                    <div class="column is-half">
+                        <h1 class="title has-text-white
+                            animate__animated 
+                            animate__fadeInDown 
+                            animate__delay-1s">
+                            Hi, I am Zait
+                        </h1>
+                        <h2 class="subtitle has-text-white
+                            animate__animated 
+                            animate__fadeInDown 
+                            animate__delay-2s">
+                            Computer-systems engineer
+                        </h2>
+                    </div>
+                    <div class="column">
+                        <p class="has-text-centered">
+                            Mine photo
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <vue-particles color="#ffffff" class="particles-js">
@@ -26,13 +35,13 @@
         background: linear-gradient(to bottom, #0a0a0a, rgb(70, 70, 70),);
     }
     .particles-js{
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 </style>
 
 <script>

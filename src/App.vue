@@ -8,6 +8,12 @@
   </div>
 </template>
 
+<style>
+  #app{
+    background: rgb(70, 70, 70);
+  }
+</style>
+
 <script>
   import Navbar from './components/Navbar'
   import Footer from './components/Footer'
