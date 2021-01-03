@@ -1,10 +1,10 @@
 <template>
-    <div class="card has-background-yellow">
+    <div class="card">
         <div
             class="card-header"
             role="button"
             aria-controls="contentIdForA11y3">
-            <p class="card-header-title has-text-center">
+            <p class="card-header-title is-centered">
                 {{ project.name }}
             </p>
         </div>
@@ -13,20 +13,28 @@
             </b-image>
         </figure>
         <div class="content has-text-justify">
-            {{ project.description}}
+            <p>{{ project.description}}</p>
         </div>
         <footer class="card-footer">
-            <a class="card-footer-item">
-                Show more
-            </a>
+            <router-link class="card-footer-item" to="/project">
+                Show more...
+            </router-link>
         </footer>
     </div>
 </template>
 
 <style>
-    .card {
-    background-color: green;
-}
+    div.card{
+        background-color: #454545 !important;
+        border-radius: 15px;
+        border: 1px solid #ededed;
+    }
+    p,*{
+        color: white !important;
+    }
+    .content{
+        margin: 3%;
+    }
 </style>
 
 <script>

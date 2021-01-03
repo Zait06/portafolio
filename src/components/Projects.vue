@@ -1,5 +1,5 @@
 <template>
-    <div class="container is-mobile" id="aboutMe">
+    <div class="container is-mobile" id="projects">
         <p class="title has-text-white has-text-centered" data-aos="fade-up">Projects</p>
         <div class="columns is-3 is-multiline">
             <div class="column is-4" data-aos="fade-up" v-for="p in proj" :key="p.name">
@@ -29,7 +29,7 @@ export default {
                 {
                     'name': 'SARES',
                     'img':'logo.png',
-                    'description': 'It\'s a project that it try to have a controler teacher register on a school.'
+                    'description': "This project simulates a check clock on school. In addition, human capital has the teachers' record."
                 },
                 {
                     'name': 'PSO',

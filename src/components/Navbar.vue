@@ -7,6 +7,9 @@
             <b-navbar-item href="#aboutMe">
                 About Me
             </b-navbar-item>
+            <b-navbar-item href="#projects">
+                Projects
+            </b-navbar-item>
             <b-navbar-item href="#contact">
                 Contact
             </b-navbar-item>
