@@ -1,5 +1,5 @@
 <template>
-    <b-navbar class="is-black">
+    <b-navbar class="is-mobile is-black">
         <template slot="end">
             <b-navbar-item tag="router-link" :to="{ path: '/' }">
                 Home

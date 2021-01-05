@@ -28,7 +28,7 @@ export default {
             proj:[
                 {
                     'name': 'SARES',
-                    'img':'logo.png',
+                    'img':'SARES.jpg',
                     'description': "This project simulates a check clock on school. In addition, human capital has the teachers' record."
                 },
                 {
