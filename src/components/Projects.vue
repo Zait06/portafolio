@@ -37,7 +37,7 @@ export default {
                     'description': 'It\'s a project that it try to have a controler teacher register on a school.'
                 },
                 {
-                    'name': 'Snake C',
+                    'name': 'Guess Who?',
                     'img':'logo.png',
                     'description': 'It\'s a project that it try to have a controler teacher register on a school.'
                 },

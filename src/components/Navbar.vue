@@ -1,5 +1,5 @@
 <template>
-    <b-navbar class="is-mobile is-black">
+    <b-navbar class="is-black">
         <template slot="end">
             <b-navbar-item tag="router-link" :to="{ path: '/' }">
                 Home
@@ -9,6 +9,9 @@
             </b-navbar-item>
             <b-navbar-item href="#projects">
                 Projects
+            </b-navbar-item>
+            <b-navbar-item href="#killing-time">
+                Killing Time
             </b-navbar-item>
             <b-navbar-item href="#contact">
                 Contact

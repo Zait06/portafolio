@@ -3,7 +3,7 @@
         <div class="columns">
             <div class="column is-three-fifths is-mobile">
                 <p class="title has-text-white" data-aos="fade-right">About me</p>
-                <p class="has-text-justified" data-aos="fade-right">
+                <p class="has-text-justified my-text" data-aos="fade-right">
                     I'm a computer-systems engineer who likes to learn new things and face new challenges.
                 </p>
             </div>
@@ -15,7 +15,8 @@
 </template>
 
 <style>
-    p{
+    .my-text{
         color:white;
+        font-size: 17.5px;
     }
 </style>

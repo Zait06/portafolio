@@ -12,14 +12,14 @@
             <b-image :src="require('@/assets/'+project.img)">
             </b-image>
         </figure>
-        <div class="content has-text-justify">
+        <div class="content has-text-centered">
             <p>{{ project.description}}</p>
         </div>
-        <footer class="card-footer">
+        <!-- <footer class="card-footer">
             <router-link class="card-footer-item" to="/project">
                 Show more...
             </router-link>
-        </footer>
+        </footer> -->
     </div>
 </template>
 
@@ -29,7 +29,7 @@
         border-radius: 15px;
         border: 1px solid #ededed;
     }
-    p,*{
+    p{
         color: white !important;
     }
     .content{

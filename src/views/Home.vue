@@ -5,6 +5,8 @@
       <AboutMe/>
       <br>
       <Projects/>
+      <br>
+      <KillTime/>
     </div>
   </div>
 </template>
@@ -19,6 +21,7 @@
 import Hero from '../components/Hero.vue'
 import AboutMe from '../components/AboutMe'
 import Projects from '../components/Projects'
+import KillTime from '../components/KillTime'
 
 export default {
   
@@ -26,7 +29,8 @@ export default {
   components: {
     Hero,
     AboutMe,
-    Projects
+    Projects,
+    KillTime
   }
 }
 </script>
