@@ -32,14 +32,14 @@ export default {
                     'description': "This project simulates a check clock on school. In addition, human capital has the teachers' record."
                 },
                 {
-                    'name': 'PSO',
+                    'name': 'PSO shape',
                     'img':'pso.png',
-                    'description': 'It\'s a project that it try to have a controler teacher register on a school.'
+                    'description': 'With the PSO algorithm help, the particles tried to learn rectangles and circles.'
                 },
                 {
                     'name': 'Guess Who?',
                     'img':'logo.png',
-                    'description': 'It\'s a project that it try to have a controler teacher register on a school.'
+                    'description': 'The classic Guess Who game, but in this version, the players will try to guess a Mexican historical figure. This with some clues and voice analysis for the answer.'
                 },
             ]
         }

@@ -29,7 +29,7 @@ export default {
                 {
                     'name': 'Snake C',
                     'img':'SnakeCpp.png',
-                    'description': "The classic game Snake develope on C++"
+                    'description': "The classic Snake game developed on C++"
                 },
             ]
         }
