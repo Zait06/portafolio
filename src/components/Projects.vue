@@ -1,6 +1,10 @@
 <template>
     <div class="container is-mobile" id="projects">
         <p class="title has-text-white has-text-centered" data-aos="fade-up">Projects</p>
+        <p class="has-text-white has-text-centered my-text" data-aos="fade-up">
+            Here I present some projects which have developed by myself since I have more coding knowledge.
+        </p>
+        <br>
         <div class="columns is-3 is-multiline">
             <div class="column is-4" data-aos="fade-up" v-for="p in proj" :key="p.name">
                 <Card :project="p"/>
@@ -38,7 +42,7 @@ export default {
                 },
                 {
                     'name': 'Guess Who?',
-                    'img':'logo.png',
+                    'img':'GuessWho.png',
                     'description': 'The classic Guess Who game, but in this version, the players will try to guess a Mexican historical figure. This with some clues and voice analysis for the answer.'
                 },
             ]

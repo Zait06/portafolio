@@ -9,8 +9,15 @@
 </template>
 
 <style>
+  html{
+    scroll-behavior: smooth;
+  }
   #app{
     background: rgb(70, 70, 70);
+  }
+  .my-text{
+      color:white;
+      font-size: 17.5px;
   }
 </style>
 

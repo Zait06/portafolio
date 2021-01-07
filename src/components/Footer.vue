@@ -4,7 +4,7 @@
             <div class="columns is-mobile">
                 <div class="column">
                     <p class="title has-text-white">Contact</p>
-                    <p>E-mail:</p>
+                    <p>E-mail: zait.hdez.lpz@gmail.com</p>
                 </div>
                 <div class="column has-text-centered">
                     <p class="title has-text-white"></p>

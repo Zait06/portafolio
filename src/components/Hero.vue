@@ -2,18 +2,30 @@
     <div class="hero is-large">
         <div class="hero-body">
             <div class="container">
-                <h1 class="title has-text-white
-                    animate__animated 
-                    animate__fadeInDown 
-                    animate__delay-1s">
-                    Hi, I am Zait
-                </h1>
-                <h2 class="subtitle has-text-white
-                    animate__animated 
-                    animate__fadeInDown 
-                    animate__delay-2s">
-                    Computer-systems engineer
-                </h2>
+                <div class="columns">
+                    <div class="column is-half">
+                        <h1 class="title has-text-white
+                            animate__animated 
+                            animate__fadeInDown 
+                            animate__delay-1s">
+                            Hi, I am Zait
+                        </h1>
+                        <h2 class="subtitle has-text-white
+                            animate__animated 
+                            animate__fadeInDown 
+                            animate__delay-2s">
+                            Computer-systems engineer
+                        </h2>
+                    </div>
+                    <div class="class column">
+                        <!-- <h2 class="subtitle has-text-white has-text-centered
+                            animate__animated 
+                            animate__fadeInDown 
+                            animate__delay-2s">
+                            Computer-systems engineer
+                        </h2> -->
+                    </div>
+                </div>
             </div>
         </div>
         <vue-particles color="#ffffff" class="particles-js">

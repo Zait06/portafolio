@@ -11,7 +11,7 @@
                 Projects
             </b-navbar-item>
             <b-navbar-item href="#killing-time">
-                Killing Time
+                Killing Time    
             </b-navbar-item>
             <b-navbar-item href="#contact">
                 Contact
