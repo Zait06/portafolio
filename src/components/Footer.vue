@@ -1,9 +1,11 @@
 <template>
     <footer class="footer is-mobile has-text-white" id="contact">
         <div class="container">
+            <p class="title has-text-white">Contact</p>
+        </div>
+        <div class="container">
             <div class="columns is-mobile">
                 <div class="column">
-                    <p class="title has-text-white">Contact</p>
                     <b-icon
                         pack="ionicons"
                         icon="mail"
