@@ -8,10 +8,19 @@
                     I have knowledge about some programing language, frameworks frontend and database manager.
                     <br>
                     Talking about something more personal... I love dancing, doing workout, and going out with friends.
+                    <br>
+                    If you want see more about me, please click <router-link :to="{ path: '/about' }">here</router-link>.
                 </p>
             </div>
             <div class="column has-text-centered">
-                
+                <figure data-aos="fade-left">
+                    <b-image
+                        :src="require('@/assets/myPhoto.jpg')"
+                        alt="My photo"
+                        ratio="1by1"
+                        :rounded="true"
+                    ></b-image>
+                </figure>
             </div>
         </div>
     </div>

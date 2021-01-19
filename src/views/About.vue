@@ -1,5 +1,21 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <div class="container">
+      <h1 class="has-text-white">This is an about page</h1>
+    </div>
   </div>
 </template>
+
+<style>
+  .about{
+    background: linear-gradient(to bottom, #0a0a0a, rgb(70, 70, 70));
+    height: 80vh;
+  }
+</style>
+
+<script>
+
+export default {
+  name:'About'
+}
+</script>
