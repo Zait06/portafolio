@@ -9,7 +9,7 @@
                     <br>
                     Talking about something more personal... I love dancing, doing workout, and going out with friends.
                     <br>
-                    If you want see more about me, please click <router-link :to="{ path: '/about' }">here</router-link>.
+                    <!-- If you want see more about me, please click <router-link :to="{ path: '/about' }">here</router-link>. -->
                 </p>
             </div>
             <div class="column has-text-centered">
