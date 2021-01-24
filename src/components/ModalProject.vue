@@ -1,7 +1,11 @@
 <template>
-    <div class="modal-card is-mobile" style="width: auto">
+        <div class="modal-card is-mobile" style="width: auto">
         <header class="modal-card-head">
-            <p class="modal-card-title is-white has-text-centered">{{namePro}}</p>
+            <p class="modal-card-title is-white has-text-centered">namePro</p>
+            <button
+                type="button"
+                class="delete modal-default-button"
+                @click="close"/>
         </header>
         <div class="modal-card-body">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -12,10 +16,10 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, consequuntur! Praesentium porro labore dolores ipsum debitis veritatis, numquam adipisci tempore quibusdam. Voluptates adipisci veniam dicta non! Nesciunt iure facilis odit.</p>
             <br>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ipsam praesentium in inventore, nihil facere at quo tempora illo harum officia voluptates, esse quod reprehenderit quis eum beatae accusamus. Libero.</p>
-            <figure class="modal-card-image">
+            <!-- <figure class="modal-card-image">
                 <b-image :src="require('@/assets/'+imgPro)">
                 </b-image>
-            </figure>
+            </figure> -->
         </div>
     </div>
 </template>
@@ -44,11 +48,17 @@
 <script>
 export default {
     name: 'ModalProject',
-    props:{
-        namePro:{
-            type: String
-        },
-        imgPro: String
-    }
+    methods: {
+        close(){
+            console.log("Cerrar");
+            this.$emit('close');
+        }
+    },
+    // props:{
+    //     namePro:{
+    //         type: String
+    //     },
+    //     imgPro: String
+    // }
 }
 </script>

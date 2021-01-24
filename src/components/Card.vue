@@ -19,8 +19,7 @@
             <footer class="card-footer">
                 <b-button type="is-black"
                     expanded
-                    tag="router-link"
-                    :to="'/about'">
+                    @click="showModal">
                     Show more
                 </b-button>
             </footer>
@@ -57,6 +56,19 @@ export default{
     props:{
         project:{
             type:Object
+        }
+    },
+    methods: {
+        showModal(){
+            this.$buefy.modal.open({
+                parent: this,
+                component: ModalProject,
+                hasModalCard: false,
+                scroll: 'keep',
+                canCancel: ['escape', 'x', 'outside'],
+                customClass: 'custom-class custom-class-2',
+                trapFocus: true
+            })
         }
     },
 }
