@@ -11,7 +11,9 @@
     "aos": "^2.3.4",
     "buefy": "^0.9.4",
     "core-js": "^3.6.5",
+    "pdfjs-dist": "^2.5.207",
     "vue": "^2.6.11",
+    "vue-pdf": "^4.2.0",
     "vue-router": "^3.2.0"
   },
   "devDependencies": {

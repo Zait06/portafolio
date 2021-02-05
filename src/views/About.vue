@@ -9,13 +9,12 @@
 <style>
   .about{
     background: linear-gradient(to bottom, #0a0a0a, rgb(70, 70, 70));
-    height: 80vh;
   }
 </style>
 
 <script>
 
 export default {
-  name:'About'
+  name:'About',
 }
 </script>
