@@ -38,7 +38,7 @@
         color: white !important;
     }
     a:hover{
-        color: rgb(148, 43, 180) !important;
+        color: rgb(102,155,247) !important;
     }
 </style>
 
