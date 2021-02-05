@@ -28,7 +28,7 @@
                 </div>
             </div>
         </div>
-        <vue-particles color="#ffffff" class="particles-js">
+        <vue-particles color="#ffffff" class="particles-js" :particlesNumber="150">
         </vue-particles>
     </div>
 </template>
