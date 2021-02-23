@@ -24,6 +24,23 @@
     .nvItem:hover{
         color: rgb(102,155,247) !important;
     }
+
+    @media screen and (max-width: 600px) {
+        b-navbar{
+            background: black !important;
+            border: 0px;
+        }
+        .nvItem{
+            color: white !important;
+            background: black;
+        }
+        .nvItem:hover{
+            color: rgb(102,155,247) !important;
+        }
+        .nvItem:active{
+            background: black !important;
+        }
+    }
 </style>
 
 <script>
