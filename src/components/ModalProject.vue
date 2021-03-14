@@ -1,31 +1,52 @@
 <template>
-        <div class="modal-card is-mobile" style="width: auto">
+    <b-modal class="myModal" v-model="$store.getters.show" 
+        :width="640"
+        :can-cancel="[]">
         <header class="modal-card-head">
-            <p class="modal-card-title is-white has-text-centered">namePro</p>
+            <p class="modal-card-title is-white has-text-centered">{{$store.getters.getInfo.name}}</p>
             <button
                 type="button"
                 class="delete modal-default-button"
-                @click="close"/>
+                @click="closeModal"/>
         </header>
         <div class="modal-card-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris. 
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, consequuntur! Praesentium porro labore dolores ipsum debitis veritatis, numquam adipisci tempore quibusdam. Voluptates adipisci veniam dicta non! Nesciunt iure facilis odit.
-            </p>
-            <br>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, consequuntur! Praesentium porro labore dolores ipsum debitis veritatis, numquam adipisci tempore quibusdam. Voluptates adipisci veniam dicta non! Nesciunt iure facilis odit.</p>
-            <br>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ipsam praesentium in inventore, nihil facere at quo tempora illo harum officia voluptates, esse quod reprehenderit quis eum beatae accusamus. Libero.</p>
+            {{getDescription($store.getters.getInfo.key)}}
+            <div class="myInfo">
+                <p v-for="txt in proy.info" :key="txt">
+                    {{txt}}
+                </p>
+                <p class="myTitle"><b>Technologies</b></p>
+                <ul class="myList">
+                    <li v-for="t in proy.technology" :key="t">
+                        {{t}}
+                    </li>
+                </ul>
+            </div>
+            <div v-if="proy.colab != null">
+                <br>
+                <p class="myTitle"><b>Collaborators</b></p>
+                <ul class="myList">
+                    <li v-for="c in proy.colab" :key="c.nombre">
+                        <b-icon
+                            pack="ionicons"
+                            class="ion-logo-github is-size-4"
+                            size="is-medium" v-if="c.git_count != null">
+                        </b-icon>
+                        <a :href="c.git_count" v-if="c.git_count != null">{{c.nombre}}</a>
+                        <p v-if="c.git_count == null">{{c.nombre}}</p>
+                    </li>
+                </ul>
+            </div>
             <!-- <figure class="modal-card-image">
                 <b-image :src="require('@/assets/'+imgPro)">
                 </b-image>
             </figure> -->
         </div>
-    </div>
+    </b-modal>
 </template>
 
 <style>
-    p{
+    p, li{
         color: white !important;
     }
     .modal-card, .modal-card-head{
@@ -43,22 +64,36 @@
         width: 50%;
         height: 50%;
     }
+    .myModal{
+        z-index: 1000000000000000000000 !important;
+    }
+    .myList{
+        margin-left: 2em;
+    }
+    .myTitle{
+        font-size: large !important;
+    }
 </style>
 
 <script>
+
+import full_info from '../utils/full-info.js'
+
 export default {
     name: 'ModalProject',
-    methods: {
-        close(){
-            console.log("Cerrar");
-            this.$emit('close');
+    data(){
+        return{
+            description: full_info,
+            proy: null
         }
     },
-    // props:{
-    //     namePro:{
-    //         type: String
-    //     },
-    //     imgPro: String
-    // }
+    methods: {
+        closeModal(){
+            this.$store.dispatch("falseShowModalAction");
+        },
+        getDescription(key){
+            this.proy = this.description[key];
+        },
+    },
 }
 </script>

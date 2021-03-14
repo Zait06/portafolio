@@ -16,13 +16,13 @@
             <div class="content has-text-centered">
                 <p>{{ project.description}}</p>
             </div>
-            <!-- <footer class="card-footer">
+            <footer class="card-footer">
                 <b-button type="is-black"
                     expanded
-                    @click="showModal">
+                    @click="cardModal">
                     Show more
                 </b-button>
-            </footer> -->
+            </footer>
         </div>
     </div>
 </template>
@@ -46,12 +46,7 @@
 
 <script>
 
-import ModalProject from './ModalProject';
-
 export default{
-    components:{
-        ModalProject
-    },
     name: 'Card',
     props:{
         project:{
@@ -59,16 +54,8 @@ export default{
         }
     },
     methods: {
-        showModal(){
-            this.$buefy.modal.open({
-                parent: this,
-                component: ModalProject,
-                hasModalCard: false,
-                scroll: 'keep',
-                canCancel: ['escape', 'x', 'outside'],
-                customClass: 'custom-class custom-class-2',
-                trapFocus: true
-            })
+        cardModal() {
+            this.$store.dispatch("trueShowModalAction",this.$props.project);
         }
     },
 }

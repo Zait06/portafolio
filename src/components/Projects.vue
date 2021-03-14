@@ -15,38 +15,65 @@
 
 <style>
     p{
-        color:white;
+        color: white !important;
+    }
+    .modal-card, .modal-card-head{
+        background-color: black !important;
+        border: 1px solid #000 !important;
+    }
+    .modal-card-body{
+        background-color: #454545 !important;
+        border: 1px solid #000 !important;
+    }
+    .modal-card-image{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 50%;
     }
 </style>
 
 <script>
 
-import Card from './Card'
+import Card from './Card';
 
 export default {
     components:{
-        Card
+        Card,
     },
     data() {
         return {
+            isCardModalActive: false,
             proj:[
                 {
+                    'key': 'sares',
                     'name': 'SARES',
                     'img':'SARES.jpg',
                     'description': "This project simulates a check clock on school. In addition, human capital has the teachers' record."
                 },
                 {
+                    'key': 'pso_shape',
                     'name': 'PSO shape',
                     'img':'pso.png',
                     'description': 'With the PSO algorithm help, the particles tried to learn rectangles and circles.'
                 },
                 {
+                    'key': 'guess_who',
                     'name': 'Guess Who?',
                     'img':'GuessWho.png',
-                    'description': 'The classic Guess Who game, but in this version, the players will try to guess a Mexican historical figure. This with some clues and voice analysis for the answer.'
+                    'description': 'The classic Guess Who game, but in this version, the players will try to guess a Mexican historical figure.This with some clues and voice analysis for the answer.'
                 },
             ]
         }
     },
+    methods:{
+        closeModal(){
+            this.isCardModalActive = false;
+        },
+        seeModal(){
+            this.$store.dispatch("trueShowModalAction");
+        }
+    }
 }
 </script>

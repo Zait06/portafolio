@@ -5,6 +5,7 @@
     <div class="container">
       <AboutMe/>
       <br>
+      <ModalProject/>
       <Projects/>
       <br>
       <KillTime/>
@@ -24,6 +25,7 @@ import GoToTop from '../components/GoToTop'
 import AboutMe from '../components/AboutMe'
 import Projects from '../components/Projects'
 import KillTime from '../components/KillTime'
+import ModalProject from '../components/ModalProject'
 
 export default {
   
@@ -33,7 +35,8 @@ export default {
     AboutMe,
     Projects,
     KillTime,
-    GoToTop
+    GoToTop,
+    ModalProject
   },
 }
 </script>

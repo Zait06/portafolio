@@ -18,12 +18,12 @@
         right: 0.5% !important; /* Place the button 30px from the right */
         z-index: 1000 !important; /* Make sure it does not overlap */
     }
-    @media screen and (max-width: 1%) {
+    @media screen and (max-width: 480px) {
         .toTop{
             background-color: none !important;
             position: fixed !important; /* Fixed/sticky position */
             bottom: 4% !important; /* Place the button at the bottom of the page */
-            right: 25% !important; /* Place the button 30px from the right */
+            right: 5% !important; /* Place the button 30px from the right */
             z-index: 1000 !important; /* Make sure it does not overlap */
         }
     }

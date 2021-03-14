@@ -31,6 +31,7 @@ export default {
         return {
             proj:[
                 {
+                    'key': 'snakeC',
                     'name': 'Snake C',
                     'img':'SnakeCpp.png',
                     'description': "The classic Snake game developed on C++"
