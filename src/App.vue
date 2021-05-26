@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Navbar/>
+    <ModalProject/>
     <router-view/>
     <Footer/>
   </div>
@@ -25,11 +26,13 @@
 <script>
   import Navbar from './components/Navbar'
   import Footer from './components/Footer'
+  import ModalProject from './components/ModalProject.vue'
 
   export default {
     components:{
       Navbar,
-      Footer
+      Footer,
+      ModalProject
     }
   }
 </script>

@@ -11,7 +11,16 @@
                         icon="mail"
                         size="is-small">
                     </b-icon>
+                    &nbsp;
                     zait.hdez.lpz@gmail.com
+                    <br>
+                    <b-icon
+                        pack="unicons"
+                        icon="ion-logo-linkedin"
+                        size="is-small">
+                    </b-icon>
+                    &nbsp;
+                    <a href="https://www.linkedin.com/in/%C3%A1ngel-zait-hern%C3%A1ndez-l%C3%B3pez-559444184/">Ángel Zait Hérnandez López</a>
                 </div>
                 <div class="column has-text-centered">
                     <!-- <p class="title has-text-white"></p> -->

@@ -25,7 +25,7 @@
         color: rgb(102,155,247) !important;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 700px) {
         b-navbar{
             background: black !important;
             border: 0px;

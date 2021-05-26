@@ -16,13 +16,13 @@
             <div class="content has-text-centered">
                 <p>{{ project.description}}</p>
             </div>
-            <!-- <footer class="card-footer">
+            <footer class="card-footer">
                 <b-button type="is-black"
                     expanded
                     @click="cardModal">
                     Show more
                 </b-button>
-            </footer> -->
+            </footer>
         </div>
     </div>
 </template>

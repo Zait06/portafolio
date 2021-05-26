@@ -7,6 +7,8 @@
             <button
                 type="button"
                 class="delete modal-default-button"
+                id="equis"
+                style="hover:delete"
                 @click="closeModal"/>
         </header>
         <div class="modal-card-body">
@@ -15,8 +17,9 @@
                 <p v-for="txt in proy.info" :key="txt">
                     {{txt}}
                 </p>
+                <br>
                 <p class="myTitle"><b>Technologies</b></p>
-                <ul class="myList">
+                <ul class="tech">
                     <li v-for="t in proy.technology" :key="t">
                         {{t}}
                     </li>
@@ -25,7 +28,7 @@
             <div v-if="proy.colab != null">
                 <br>
                 <p class="myTitle"><b>Collaborators</b></p>
-                <ul class="myList">
+                <ul class="colab">
                     <li v-for="c in proy.colab" :key="c.nombre">
                         <b-icon
                             pack="ionicons"
@@ -37,10 +40,9 @@
                     </li>
                 </ul>
             </div>
-            <!-- <figure class="modal-card-image">
-                <b-image :src="require('@/assets/'+imgPro)">
-                </b-image>
-            </figure> -->
+            <br>
+            <p class="myTitle"><b>Repository: </b></p>
+            <a :href="proy.link" style="margin-left:2em;">{{proy.link}}</a>
         </div>
     </b-modal>
 </template>
@@ -67,11 +69,18 @@
     .myModal{
         z-index: 1000000000000000000000 !important;
     }
-    .myList{
+    .colab{
+        margin-left: 1em;
+    }
+    .tech{
         margin-left: 2em;
+        list-style-type: square;
     }
     .myTitle{
         font-size: large !important;
+    }
+    #equis:hover{
+        color: rgb(102,155,247) !important;
     }
 </style>
 
