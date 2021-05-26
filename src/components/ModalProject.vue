@@ -14,7 +14,7 @@
         <div class="modal-card-body">
             {{getDescription($store.getters.getInfo.key)}}
             <div class="myInfo">
-                <p v-for="txt in proy.info" :key="txt">
+                <p v-for="txt in description[$store.getters.getInfo.key]['infoProject']" :key="txt">
                     {{txt}}
                 </p>
                 <br>
@@ -100,7 +100,7 @@ export default {
     data(){
         return{
             description: full_info,
-            proy: null
+            proy: full_info.sares
         }
     },
     methods: {

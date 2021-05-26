@@ -32,15 +32,13 @@
         background-color: #454545 !important;
         border-radius: 15px;
         border: 1px solid #ededed;
+        z-index: 100 !important;
     }
     p{
         color: white !important;
     }
     .content{
         margin: 3%;
-    }
-    b-modal{
-        z-index: 99999 !important;
     }
 </style>
 

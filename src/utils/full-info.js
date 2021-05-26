@@ -1,6 +1,6 @@
 const full_info = {
     'sares': {
-        'info': [
+        'infoProject': [
             "It's a prototype, that the main idea is like a check clock.",
             "We did a desktop app to check the users with an ID and password to verify the enter and exit hours.",
             "Furthermore, we did a web application to sign up and update the users, this application is controlled by human capital."
@@ -23,7 +23,7 @@ const full_info = {
         ],
     },
     'pso_shape': {
-        'info': [
+        'infoProject': [
             "This project uses an Evolutionary Algorithm call PSO (Particle Swarm Optimization).",
             "The algorithm tries to find the best similar shape given by the user.",
             "You can only try to find circles and rectangles."
@@ -42,7 +42,7 @@ const full_info = {
         ],
     },
     'guess_who': {
-        'info': [
+        'infoProject': [
             "It's was created with sockets (server and clients), where the server socket sent one by one clue to guess the person.",
             "You must answer with your voice, and if the answer is incorrect, the next turn, the opponent will receive another clue and it will try to answer.",
             "Finally, if the answer is correct, the player wins."
@@ -57,7 +57,7 @@ const full_info = {
         ],
     },
     'snakeC': {
-        'info': [
+        'infoProject': [
             "This is the classic game Snake. This was developed in C++ and you can play with it on a computer.",
             "The controls are the arrows on the keyboard and you can pause the game with Enter."
         ],
