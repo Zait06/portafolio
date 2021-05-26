@@ -17,7 +17,7 @@ const full_info = {
                 'git_count': null
             },
             {
-                'nombre': 'Diana Laura',
+                'nombre': 'Diana Laura Velasco Aguilar',
                 'git_count': null
             }
         ],
