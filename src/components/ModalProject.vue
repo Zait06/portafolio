@@ -1,15 +1,15 @@
 <template>
     <b-modal class="myModal" v-model="$store.getters.show" 
         :width="640"
-        :can-cancel="[]">
+        :can-cancel="['&times;']">
         <header class="modal-card-head">
             <p class="modal-card-title is-white has-text-centered">{{$store.getters.getInfo.name}}</p>
             <button
                 type="button"
-                class="delete modal-default-button"
                 id="equis"
-                style="hover:delete"
-                @click="closeModal"/>
+                @click="closeModal">
+                &times;
+            </button>
         </header>
         <div class="modal-card-body">
             {{getDescription($store.getters.getInfo.key)}}
@@ -67,7 +67,8 @@
         height: 50%;
     }
     .myModal{
-        z-index: 1000000000000000000000 !important;
+        z-index: 999999999999999999999999999999999999999999999 !important;
+        display: block;
     }
     .colab{
         margin-left: 1em;
@@ -78,6 +79,12 @@
     }
     .myTitle{
         font-size: large !important;
+    }
+    #equis{
+        color: white;
+        background-color: #000;
+        border: 0em;
+        font-size: 1.5em;
     }
     #equis:hover{
         color: rgb(102,155,247) !important;
